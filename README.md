@@ -34,7 +34,6 @@
 
 # Manual (Following model 1️⃣ → 2️⃣ → 3️⃣)
 
----
 
 ## 1️⃣ **Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer**
 
