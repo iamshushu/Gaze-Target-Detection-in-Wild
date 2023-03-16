@@ -1,18 +1,20 @@
 # Gaze-Target-Detection-in-Wild
 
 <aside>
-💻 Three-stage method to simulate the human gaze inference behavior in 3D space
 
-Stage 1) Estimate a 3D gaze orientation from the head
+💻 **Three-stage method to simulate the human gaze inference behavior in 3D space**
 
-Stage 2) Develop a Dual Attention Module (DAM)
+    Stage 1) Estimate a 3D gaze orientation from the head
 
-Stage 3) Use the generated dual attention as guidance to perform two sub-tasks: 
+    Stage 2) Develop a Dual Attention Module (DAM)
 
-Stage 3-1) Identifying whether the gaze target is inside or out of the image 
+    Stage 3) Use the generated dual attention as guidance to perform two sub-tasks: 
 
-Stage 3-2) Locating the target if inside
+    Stage 3-1) Identifying whether the gaze target is inside or out of the image 
 
+    Stage 3-2) Locating the target if inside
+
+    
     
     
 </aside>
