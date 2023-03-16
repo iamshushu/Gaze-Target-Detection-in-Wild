@@ -1,7 +1,5 @@
 # Gaze-Target-Detection-in-Wild
 
-# Gaze Target Detection in the Wild
-
 <aside>
 💻 Three-stage method to simulate the human gaze inference behavior in 3D space
 
