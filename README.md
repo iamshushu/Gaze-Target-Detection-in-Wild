@@ -13,25 +13,22 @@ Stage 3-1) Identifying whether the gaze target is inside or out of the image
 
 Stage 3-2) Locating the target if inside
 
+    
+    
 </aside>
 
 > **논문에서 발전시킨 부분 !!**
 > 
 
-<aside>
-💡 Gaze target detection aims to infer where people in a scene are looking
 
-</aside>
+**💡 Gaze target detection aims to infer where people in a scene are looking**
 
-<aside>
-💡 Person in scene is looking** (→ **people in a scene are looking : 최종 목표 )
 
-</aside>
+**💡 Person in scene is looking (→ people in a scene are looking : 최종 목표 )**
 
-<aside>
-💡 The Common Gaze Point of Human Observer
 
-</aside>
+**💡 The Common Gaze Point of Human Observer**
+
 
 # Manual (Following model 1️⃣ → 2️⃣ → 3️⃣)
 
@@ -272,11 +269,10 @@ Stage 3-2) Locating the target if inside
         ```python
         python gaze360.py
         ```
-        
-    
+       
     ---
     
-    - ~~<Run DensePose Part>~~ (사용x, 참고용)
+    - Run DensePose Part (사용x, 참고용)
         1. Detect the pose of all the people in the video
             
             `rm -r ./content/DensePose/DensePoseData/infer_out/*`
@@ -317,9 +313,11 @@ Stage 3-2) Locating the target if inside
             
             root directory에서 demo code 실행
             
-        
+     ---   
 
-### <Usage>
+    
+    
+### Usage
 
 1. Run [demo.py](http://demo.py)
     
@@ -467,7 +465,7 @@ Download the VideoAttentionTarget dataset from
 
 - 이후에 추가로 사용할 수 있는 Datasets : **GazeFollow dataset, Gaze360**
 
-### <Usage>
+### Usage
 
 1. Pretrained model이 없으므로 train 필요
     - train에 사용할 dataset : VideoAttentionTarget
