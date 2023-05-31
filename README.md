@@ -370,7 +370,7 @@
     
     `output type` : image 내 사람들의 bounding Boxes 좌표 (x1, y1, x2, y2)
     
-    이때, 사람의 body bounding box 를 기준**으로 **사람의 head bounding box 좌표 추출
+    이때, 사람의 body bounding box 를 기준으로 사람의 head bounding box 좌표 추출
     
     → 이 부분은 개선 필요 !! 임의의 비율대로 자름
     
