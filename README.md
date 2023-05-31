@@ -101,7 +101,7 @@
     Input Dataset 1: VideoAttentionTarget
     Download the VideoAttentionTarget dataset from https://www.dropbox.com/s/8ep3y1hd74wdjy5/videoattentiontarget.zip?dl=0
     
-    ~~Input Dataset 2: GazeFollow~~
+    Input Dataset 2: GazeFollow (not use yet)
     
     (Source : https://github.com/ejcgt/attention-target-detection)
     ```
