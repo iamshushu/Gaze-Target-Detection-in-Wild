@@ -98,10 +98,10 @@
     (+ input folder도 넣을 수 있음)
     
     ```
-    **Input Dataset 1: VideoAttentionTarget**
+    Input Dataset 1: VideoAttentionTarget
     Download the VideoAttentionTarget dataset from https://www.dropbox.com/s/8ep3y1hd74wdjy5/videoattentiontarget.zip?dl=0
     
-    **~~Input Dataset 2: GazeFollow~~**
+    ~~Input Dataset 2: GazeFollow~~
     
     (Source : https://github.com/ejcgt/attention-target-detection)
     ```
@@ -126,8 +126,8 @@
 
 [https://github.com/erkil1452/gaze360](https://github.com/erkil1452/gaze360)
 
-- **Details ( Data, Structure )**
-    - **Data**
+- Details ( Data, Structure )
+    - Data
         
         ```
         Gaze360 Dataset more information at http://gaze360.csail.mit.edu.
@@ -139,7 +139,7 @@
         ```
         
     
-    - **Structure (Original)**
+    - Structure (Original)
         
         ```bash
         ${PROJECT}
@@ -237,9 +237,9 @@
     
 4. Download video(video.mp4) ~~and run DensePose on it~~    
     
-    (이 4번 부분은 Gaze360 모델을 가장 **간단하게 test**할 수 있는 방법을 설명, 
+    (이 4번 부분은 Gaze360 모델을 가장 간단하게 test할 수 있는 방법을 설명, 
     
-    **실제 사용 예시는 아래의 <Useage>** 보기!)
+    실제 사용 예시는 아래의 <Useage> 보기!)
     
     > Extract the frames of the video in a temporary folder:
     > 
@@ -265,7 +265,7 @@
         
         `ffmpeg -i video.mp4 ./content/temp/frame%04d.jpg` 
         
-    4. test code 명 : **gaze360.py**
+    4. test code 명 : gaze360.py
         
         ```python
         python gaze360.py
@@ -292,9 +292,9 @@
             ```
             
         4. Run DensePose on the video frames
-            1.  **root directory** 
+            1.  root directory
                 
-                → ****사용자에 따라 달라짐, 변경 필요**
+                → 사용자에 따라 달라짐, 변경 필요
                 
             
             ```bash
@@ -303,9 +303,9 @@
             python apply_net.py \
               dump \
               configs/densepose_rcnn_R_101_FPN_s1x.yaml model_final_c6ab63.pkl \
-              **<root directory>**/content/temp \
+              <root directory>/content/temp \
               -v \
-              --output <root directory>**/content/DensePoseData/data.pkl
+              --output <root directory>/content/DensePoseData/data.pkl
             ```
             
         5. Run code
@@ -464,7 +464,7 @@ Download the VideoAttentionTarget dataset from
 - 54,967 out-of-frame gaze indicators
 ```
 
-- 이후에 추가로 사용할 수 있는 Datasets : **GazeFollow dataset, Gaze360**
+- 이후에 추가로 사용할 수 있는 Datasets : GazeFollow dataset, Gaze360
 
 ### Usage
 
@@ -516,7 +516,7 @@ Download the VideoAttentionTarget dataset from
     - data_dir : image folder의 path (MiDas gaze360에서 사용한 input image의 path와 동일)
     - depth_dir : MiDaS에서 구한 depth map image가 저장된 path
 - `output type`
-    - **예측된 gaze target을 visualize한 image  → backbone 이전의 dual attention image**
+    - 예측된 gaze target을 visualize한 image  → backbone 이전의 dual attention image
     
 
 2-2 . Run inference_mean.py
@@ -530,8 +530,8 @@ Download the VideoAttentionTarget dataset from
     ```
     
 - `input type`
-    - annotation_dir : **gaze360** 에서 구한 csv file이 저장된 path
+    - annotation_dir : gaze360 에서 구한 csv file이 저장된 path
     - data_dir : image folder의 path (MiDas, gaze360에서 사용한 input image의 path와 동일)
-    - depth_dir : **MiDaS**에서 구한 depth map image가 저장된 path
+    - depth_dir : MiDaS에서 구한 depth map image가 저장된 path
 - `output type`
     - 예측된 gaze target을 visualize한 image→ backbone 이후의 Output heatmap
