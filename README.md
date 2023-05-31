@@ -364,7 +364,7 @@
 
 ### 기존 Model에서 달라진 부분 설명
 
-1. DensePose 대신 <Detectron2>의 object detection 사용
+1. DensePose 대신 Detectron2의 object detection 사용
     
     `input type` : image 
     
@@ -377,6 +377,9 @@
     → 얼굴 영역을 잘 잡아내지 못하는 경우 추정하는 3D gaze direction이 정확하지 않을 수 있음
     
     → Detectron2 를 사용하지 않더라도, 사람의 얼굴 영역의 bounding box 만 잘 추출할 수 있다면,   다른 모델 사용 가능!!
+                  
+    → Gaze360 논문에서는 AlphaPose 를 사용해서 Subject Positioning 을 진행한다고 나와있음. 즉, frame 내의 subjects 들의 head keypoints 와 feet 의의 위치를 탐지함.
+              
     
 2. 추출한 사람의 head bounding box 좌표로 crop한 head 이미지를 Gaze360의 pretrained model에 대입후 3D gaze direction을 추정
 
