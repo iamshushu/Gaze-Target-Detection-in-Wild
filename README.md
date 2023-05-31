@@ -161,7 +161,7 @@
         ${PROJECT}
         ├── detectron2 (폴더)
         ├── output
-        │	├── csv
+        │	└── *.csv
         ├── demo.py
         ├── frame_to_video.py
         ├── gaze360_model.pth.tar (pretrained model)
@@ -376,7 +376,7 @@
     
     → 얼굴 영역을 잘 잡아내지 못하는 경우 추정하는 3D gaze direction이 정확하지 않을 수 있음
     
-    → Detectron2 를 사용하지 않더라도, 사람의 얼굴 영역의 bounding box 만 잘 추출할 수 있다면,     다른 모델 사용 가능!!
+    → Detectron2 를 사용하지 않더라도, 사람의 얼굴 영역의 bounding box 만 잘 추출할 수 있다면,   다른 모델 사용 가능!!
     
 2. 추출한 사람의 head bounding box 좌표로 crop한 head 이미지를 Gaze360의 pretrained model에 대입후 3D gaze direction을 추정
 
